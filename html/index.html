@@ -5,29 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="../css/aside.css">
+    <link rel="stylesheet" href="../css/popup.css">
     <title>Financeiro</title>
 </head>
 <body>
     <aside>
         <div class="profile_content">
             <div class="icon_profile">
-                    opa
+                <img src="" alt="" srcset="">
             </div>
             <div class="nome">Felipe</div>
             <nav>
                 <div class="features">
-                    <p></p>
-                    salario
+                    <div class="icon_feature">
+                        <img src="../img/icons/save-money.png" alt="" srcset="">
+                    </div>
+                    <p>salario</p>
                 </div>
                 <div class="features">
-                    desempenho
+                    <div class="icon_feature">
+                        <img src="../img/icons/save-money.png" alt="" srcset="">
+                    </div>
+                    <p>Desempenho</p>
                 </div>
                 <div class="features">
-                    deletar dados
+                    <div class="icon_feature">
+                        <img src="../img/icons/save-money.png" alt="" srcset="">
+                    </div>
+                    <p>conquista</p>
+                </div>
+                <div class="features">
+                    <div class="icon_feature">
+                        <img src="../img/icons/save-money.png" alt="" srcset="">
+                    </div>
+                    <p>Deletar</p> 
                 </div>
             </nav>
             
-
+            <div class="pontos">
+                    <p>opa </p>
+            </div>
         </div>
     </aside>
     <main>
@@ -56,7 +73,7 @@
                     <p>Gastos</p>
                 </div> 
                 <div class="add">
-                    <button class="btn_out" type="button ">Adicionar</button>
+                    <button class="btn_out  btn" type="button ">Adicionar</button>
                 </div>
             </div>
             <div class="in">
@@ -64,14 +81,30 @@
                     <p>Investimentos</p>
                 </div>
                 <div class="add">
-                    <button class="btn_in" type="button">Adicionar</button>
+                    <button class="btn_in btn" type="button">Adicionar</button>
                 </div>
-
         </section>
+        <div class="popup disable">
+                <div class="content_popup">
+                    <div class="close">X</div>
+                    <div class="insert_data">
+                        <div class="content_out"></div>
+                        <div class="content_in">
+                            <label for="gastos">Escolha um gasto</label>
+                            <select name="" id="" >
+                                <option value="Card">cartão</option>
+                                <option value="Mensalidade">Mensalidade</option>
+                                <option value="Pix">Pix</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+        </div>
     </main>
     <aside>
 
     </aside>
 </body>
 <script src="../js/code.js"></script>
+<script src="../js/modal.js"></script>
 </html>
