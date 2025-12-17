@@ -75,3 +75,14 @@ main {
     border-radius: 50px;
     background-color: rgb(112, 178, 204);
 }
+
+.icon_charts{
+    display: flex;
+    width: 32px;
+    height: 32px;
+
+}
+.icon_charts>img{
+    width: 100%;
+    height: 100%;
+}
