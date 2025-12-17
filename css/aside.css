@@ -1,5 +1,4 @@
-
-aside { 
+aside {
     height: 100%;
     width: 20%;
     border: 1px solid blue;
@@ -16,14 +15,20 @@ aside {
     align-items: center;
 }
 
-.icon_profile { 
+.icon_profile {
     height: 25%;
     width: 80%;
     border: 1px solid black;
     border-radius: 100%;
+    overflow-y: hidden;
 }
 
-nav { 
+.icon_profile>img {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -32,26 +37,23 @@ nav {
     width: 50%;
 }
 
-nav>div { 
+nav>div {
     width: 100%;
     height: 20%;
-
 }
 
-.features { 
+.features {
     align-items: center;
     display: flex;
     justify-content: space-evenly;
     border: 1px solid black;
 }
 
-.icon_feature { 
+.icon_feature {}
 
-}
-
-.pontos { 
+.pontos {
     margin-top: auto;
     width: 100%;
     height: 20%;
-        border: 1px solid black;
+    border: 1px solid black;
 }
