@@ -10,6 +10,16 @@
 
 }
 
+.close { 
+    width: 5%;  
+}
+
+.content_in { 
+    display: flex;
+    flex-direction: column;
+}
+
+
 .disable { 
 
     display: none;

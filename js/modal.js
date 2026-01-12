@@ -14,6 +14,3 @@ active.forEach((value) => {
         popup.classList.remove("disable")
     })
 })
-
-        
-
