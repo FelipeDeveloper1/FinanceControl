@@ -1,8 +1,10 @@
+// variables
+
 const popup = document.querySelector(".popup")
-
 const close = document.querySelector(".close")
-const active = document.querySelectorAll(".btn")
 
+const active = document.querySelectorAll(".btn")
+const submit = document.querySelector(".submit")    
 
 close.addEventListener('click', () => { 
     popup.classList.add("disable")
@@ -15,3 +17,8 @@ active.forEach((value) => {
     })
 })
 
+submit.addEventListener('click', () => { 
+    const spend = document.querySelector("#spend").value
+    const metodo = document.querySelector("#metodo")
+
+})
