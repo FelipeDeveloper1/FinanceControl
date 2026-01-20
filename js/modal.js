@@ -1,24 +1,65 @@
-// variables
+class modal {
+    constructor(popup, close, active, form) {
 
-const popup = document.querySelector(".popup")
-const close = document.querySelector(".close")
+        // public variables
 
-const active = document.querySelectorAll(".btn")
-const submit = document.querySelector(".submit")    
+        this.popup = document.querySelector(popup)
+        this.close = document.querySelector(close)
+        this.active = document.querySelectorAll(active)
+        this.form = document.querySelector(form)
 
-close.addEventListener('click', () => { 
-    popup.classList.add("disable")
+    }
 
-})
+    // functions - methods
 
-active.forEach((value) => { 
-    value.addEventListener('click', () => { 
-        popup.classList.remove("disable")
-    })
-})
+    closemodal = () => {
+        this.popup.classList.add("disable")
+    }
+    openmodal = () => {
+        this.popup.classList.remove("disable")
+    }
 
-submit.addEventListener('click', () => { 
-    const spend = document.querySelector("#spend").value
-    const metodo = document.querySelector("#metodo")
+    getvalues = () => {
 
-})
+    }
+
+    // event
+
+    click = () => {
+        this.active.forEach(element => {
+            element.addEventListener('click', () => {
+                this.openmodal()
+            })
+        })
+        this.close.addEventListener("click", () => {
+            this.closemodal()
+        })
+
+        this.form.addEventListener('submit', (e) => {
+            e.preventDefault()
+            const data = new FormData(e.target)
+            const alldata = Object.fromEntries(data.entries())
+            console.log(alldata.data)
+
+
+
+
+        })
+
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+const InitModal = new modal('.popup', '.close', '.btn', '#form')
+InitModal.click()

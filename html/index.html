@@ -98,16 +98,18 @@
                 <div class="close">X</div>
                 <div class="insert_data">
                     <div class="content_out"></div>
-                    <div class="content_in " action="">
-                        <input type="text" name="" id="spend" placeholder="O que foi o gasto" >
+                    <form method="get" class="content_in " action="" id="form">
+                        <input type="text" name="" id="spend" placeholder="O que foi o gasto">
                         <label for="gastos">Escolha tipo de gasto</label>
+
                         <select name="" id="metodo" class="metodo">   
                                 <option value="Card">cartão</option>
                                 <option value="Mensalidade">Mensalidade</option>
                                 <option value="Pix">Pix</option>
                         </select>
+
                         <input type="submit" value="enviar" class="submit">
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
