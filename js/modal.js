@@ -1,13 +1,11 @@
 class modal {
     constructor(popup, close, active, form) {
-
         // public variables
-
         this.popup = document.querySelector(popup)
         this.close = document.querySelector(close)
         this.active = document.querySelectorAll(active)
         this.form = document.querySelector(form)
-
+        this.AllExpenses = []
     }
 
     // functions - methods
@@ -20,9 +18,9 @@ class modal {
     }
 
     getvalues = (spend, method) => {
-        let expenses = {}
-        expenses = { spend, method }
-        console.log(expenses)
+        let _expenses = {}
+        _expenses = { spend, method }
+        this.AllExpenses.push(_expenses)
     }
 
     // event and call 
@@ -41,10 +39,7 @@ class modal {
             e.preventDefault()
             const element = e.target
             this.getvalues(element.spend.value, element.method.value)
-
-
-
-
+            console.log(this.AllExpenses)
         })
 
     }
