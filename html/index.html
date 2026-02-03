@@ -95,22 +95,33 @@
         </section>
         <div class="popup disable">
             <div class="content_popup">
-                <div class="close">X</div>
-                <div class="insert_data">
-                    <div class="content_out"></div>
-                    <form method="get" class="content_in " action="" id="form">
-                        <input type="text" name="spend" id="spend" placeholder="O que foi o gasto">
-                        <label for="gastos">Escolha tipo de gasto</label>
+                <div>
+                    <p class="close">X</p>
+                </div>
+                <form method="get" class="content_in disable" action="" id="form">
+                    <input type="text" name="spend" id="spend" placeholder="O que foi o gasto">
+                    <label for="gastos">Escolha tipo de gasto</label>
 
-                        <select name="method" id="metodo" class="metodo">   
+                    <select name="method" id="metodo" class="metodo">   
                                 <option value="Card">cartão</option>
                                 <option value="Mensalidade">Mensalidade</option>
                                 <option value="Pix">Pix</option>
                         </select>
 
-                        <input type="submit" value="enviar" class="submit">
-                    </form>
-                </div>
+                    <input type="submit" value="enviar" class="submit">
+                </form>
+                <form method="get" class="content_in disable" action="" id="form_in">
+                    <input type="text" name="invest" id="invest" placeholder="Quanto foi investido">
+                    <label for="gastos">valor investido</label>
+
+                    <select name="method" id="metodo" class="metodo">   
+                                <option value="poupanca">poupança/caixinha</option>
+                                <option value="stocks">Ações</option>
+                                <option value="cdb">CDB</option>
+                        </select>
+
+                    <input type="submit" value="enviar" class="submit">
+                </form>
             </div>
         </div>
     </main>

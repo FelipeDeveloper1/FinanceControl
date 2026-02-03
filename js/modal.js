@@ -1,9 +1,10 @@
 class modal {
-    constructor(popup, close, active, form) {
+    constructor(popup, close, active, content, form) {
         // public variables
         this.popup = document.querySelector(popup)
         this.close = document.querySelector(close)
         this.active = document.querySelectorAll(active)
+        this.content = document.querySelectorAll(content)
         this.form = document.querySelector(form)
         this.AllExpenses = []
     }
@@ -12,23 +13,30 @@ class modal {
 
     closemodal = () => {
         this.popup.classList.add("disable")
+        this.content.forEach((value) => {
+            value.classList.add("disable")
+        })
+
     }
-    openmodal = () => {
+    openmodal = (index) => {
         this.popup.classList.remove("disable")
+        this.content[index].classList.remove("disable")
     }
 
     getvalues = (spend, method) => {
         let _expenses = {}
         _expenses = { spend, method }
+
         this.AllExpenses.push(_expenses)
     }
 
     // event and call 
 
     click = () => {
-        this.active.forEach(element => {
+        this.active.forEach((element, index) => {
             element.addEventListener('click', () => {
-                this.openmodal()
+                this.openmodal(index)
+
             })
         })
         this.close.addEventListener("click", () => {
@@ -57,5 +65,5 @@ class modal {
 
 
 
-const InitModal = new modal('.popup', '.close', '.btn', '#form')
+const InitModal = new modal('.popup', '.close', '.btn', '.content_in', '#form')
 InitModal.click()
