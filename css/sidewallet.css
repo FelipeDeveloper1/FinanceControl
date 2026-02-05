@@ -5,6 +5,7 @@
      height: 100%;
      width: 100%;
      background-color: rgb(221, 71, 255);
+     border: 5px solid orange;
  }
  
  .icon_wallet {

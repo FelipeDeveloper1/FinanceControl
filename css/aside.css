@@ -1,8 +1,10 @@
 aside {
-    height: 100%;
-    width: 20%;
-    border: 1px solid blue;
     border-radius: 3px;
+}
+
+.aside_profile {
+    border: 5px solid blue;
+    /* height: 100vh; */
 }
 
 .profile_content {

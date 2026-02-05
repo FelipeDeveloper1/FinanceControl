@@ -6,16 +6,32 @@
 }
 
 body {
-    display: flex;
+    display: grid;
     width: 100vw;
     height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5em;
+    border: 1px solid black;
     /* background-image: linear-gradient(to right, #022326, #034040, #035951, #02735E); */
-    background-color: whitesmoke;
 }
 
 main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
     height: 100%;
-    width: 80%;
+    width: 65vw;
+    border: 1px solid red;
+}
+
+.aside_profile {
+    height: 100%;
+    width: 15vw;
+}
+
+.aside_wallet {
+    height: 100%;
+    width: 20vw;
 }
 
 .finance_elements {
@@ -23,12 +39,12 @@ main {
     align-items: center;
     justify-content: center;
     border: 1px solid black;
-    height: 30%;
+    height: 50%;
+    background-color: tomato;
 }
 
 .chart {
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     width: 20%;
@@ -50,7 +66,8 @@ main {
 
 .finance_transaction {
     display: flex;
-    height: 70%;
+    height: 80%;
+    border: 1px solid salmon;
     width: 100%;
 }
 
