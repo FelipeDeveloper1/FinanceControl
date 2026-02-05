@@ -95,32 +95,35 @@
         </section>
         <div class="popup disable">
             <div class="content_popup">
-                <div>
+                <div class="button_close">
                     <p class="close">X</p>
                 </div>
+                <!-- gasto -->
                 <form method="get" class="content_in disable" action="" id="form">
-                    <input type="text" name="spend" id="spend" placeholder="O que foi o gasto">
-                    <label for="gastos">Escolha tipo de gasto</label>
-
-                    <select name="method" id="metodo" class="metodo">   
-                                <option value="Card">cartão</option>
-                                <option value="Mensalidade">Mensalidade</option>
-                                <option value="Pix">Pix</option>
+                    <div class="contentInfo">
+                        <span class="subtitles">Digite o que foi gasto</span>
+                        <input type="text" name="spend" id="spend" placeholder="Exemplo: sportify" class="insertion">
+                        <label for="gastos" class="subtitles">Escolha tipo de gasto</label>
+                        <select name="method" id="metodo" class="metodo insertion">   
+                            <option value="Card">cartão</option>
+                            <option value="Mensalidade">Mensalidade</option>
+                            <option value="Pix">Pix</option>
                         </select>
-
-                    <input type="submit" value="enviar" class="submit">
+                        <input type="submit" value="ENVIAR" class="submit insertion">
+                    </div>
                 </form>
+
+                <!-- investimento -->
                 <form method="get" class="content_in disable" action="" id="form_in">
-                    <input type="text" name="invest" id="invest" placeholder="Quanto foi investido">
+                    <span class="subtitles">Digite quanto foi investido</span>
+                    <input type="text" name="invest" id="invest" placeholder="Quanto foi investido" class="insertion">
                     <label for="gastos">valor investido</label>
-
-                    <select name="method" id="metodo" class="metodo">   
-                                <option value="poupanca">poupança/caixinha</option>
-                                <option value="stocks">Ações</option>
-                                <option value="cdb">CDB</option>
-                        </select>
-
-                    <input type="submit" value="enviar" class="submit">
+                    <select name="method" id="metodo" class="metodo insertion">   
+                        <option value="poupanca">poupança/caixinha</option>
+                        <option value="stocks">Ações</option>
+                        <option value="cdb">CDB</option>
+                    </select>
+                    <input type="submit" value="ENVIAR" class="submit insertion">
                 </form>
             </div>
         </div>

@@ -19,6 +19,7 @@ class modal {
 
     }
     openmodal = (index) => {
+        console.log(this.content)
         this.popup.classList.remove("disable")
         this.content[index].classList.remove("disable")
     }

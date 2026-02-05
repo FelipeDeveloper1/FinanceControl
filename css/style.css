@@ -38,6 +38,16 @@ main {
     margin: 1%;
 }
 
+
+/* .chart:hover {
+    background-color: black;
+    color: white;
+    width: 23%;
+    height: 83%;
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+} */
+
 .finance_transaction {
     display: flex;
     height: 70%;
