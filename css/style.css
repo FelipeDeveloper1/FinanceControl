@@ -20,18 +20,17 @@ main {
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 65vw;
+    width: 60vw;
     border: 1px solid red;
 }
 
 .aside_profile {
     height: 100%;
-    width: 15vw;
 }
 
 .aside_wallet {
     height: 100%;
-    width: 20vw;
+    width: 19vw;
 }
 
 .finance_elements {

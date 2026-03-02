@@ -15,6 +15,7 @@ class modal {
         this.popup.classList.add("disable")
         this.content.forEach((value) => {
             value.classList.add("disable")
+            
         })
 
     }
@@ -24,11 +25,12 @@ class modal {
         this.content[index].classList.remove("disable")
     }
 
-    getvalues = (spend, method) => {
+    getvalues = (spend, method, cashout) => {
         let _expenses = {}
-        _expenses = { spend, method }
+        _expenses = { spend, method, cashout}
 
         this.AllExpenses.push(_expenses)
+        console.log(this.AllExpenses)
     }
 
     // event and call 
@@ -47,8 +49,7 @@ class modal {
         this.form.addEventListener('submit', (e) => {
             e.preventDefault()
             const element = e.target
-            this.getvalues(element.spend.value, element.method.value)
-            console.log(this.AllExpenses)
+            this.getvalues(element.spend.value, element.method.value, element.cashout.value)
         })
 
     }
