@@ -4,34 +4,31 @@
      align-items: center;
      height: 100%;
      width: 100%;
-     background-color: rgb(221, 71, 255);
-     border: 5px solid orange;
  }
  
  .icon_wallet {
-     height: 30%;
+     height: 15%;
      width: 80%;
      border: 1px solid black;
      overflow-y: hidden;
      margin-top: 2vh;
+     border-radius: 5%;
+     background-color: #63d2c6;          /* verde água */
+     box-shadow: 6px 3px 5px grey ;
+
+
+
  }
  
- .arrows {
-     display: flex;
-     justify-content: space-evenly;
-     width: 100%;
-     height: 3vh;
-     margin-top: 2vh;
- }
- 
- .arrow {
-     background-color: tan;
-     width: 15%;
-     height: 100%;
-     border-radius: 5px;
- }
- 
- .arrow>button {
-     width: 100%;
-     height: 100%;
+
+
+ .samples_content {     
+     height: 70%;
+     width: 80%;
+     border: 1px solid black;
+     margin-top: 10%;
+     background-color: #63d2c6;          /* verde água */
+     border-radius: 2%;
+    box-shadow: 8px 7px 5px grey ;
+
  }
